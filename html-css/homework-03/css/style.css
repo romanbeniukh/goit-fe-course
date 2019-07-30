@@ -76,11 +76,11 @@ img {
     margin: 0;
     display: inline-block;
     margin-right: 60px;
-    padding-bottom: 140px;
+    margin-bottom: 140px;
 }
 .small-container-item div:nth-child(5),
 .small-container-item div:last-child {
-    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 .small-container-item div:nth-child(2n) {
     margin-right: 0px;
