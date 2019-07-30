@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.page-nav {
+    padding-top: 77px;
+    padding-bottom: 105px;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: center;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.main-menu li:not(:last-child){
+    margin-right: 100px;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #626262;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+    color: #03a9f4;
+}
+.small-container-item {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+.small-container-item h2 {
+    font-size: 30px;
+}
+.small-container-item p {
+    font-size: 14px;
+}
+.small-container-item div {
+    width: 420px;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-right: 60px;
+    padding-bottom: 140px;
+}
+.small-container-item div:nth-child(5),
+.small-container-item div:last-child {
+    padding-bottom: 0px;
+}
+.small-container-item div:nth-child(2n) {
+    margin-right: 0px;
+}
+.font-ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    color: #b4ad9e;
+}
