@@ -23,7 +23,7 @@ img {
     width: 900px;
     margin: 0 auto;
 }
-
+/*NAVIGATION*/
 .page-nav {
     padding-top: 77px;
     padding-bottom: 105px;
@@ -59,6 +59,7 @@ img {
 .main-menu a:focus {
     color: #03a9f4;
 }
+/*NAVIGATION END*/
 .small-container-item {
     font-size: 0;
     margin: 0;
@@ -103,6 +104,8 @@ p {
     color: #b4ad9e;
     line-height: 70px;
 }
+
+/*BUTTON*/
 .btn-block {
     display: inline-block;
     width: 900px;
@@ -124,7 +127,16 @@ a.btn {
     background-color: transparent;
     text-align: center;
     border: 1px solid #626262;
+    transition: .4s;
 }
+.btn:hover{
+    background-color: #03a9f4;
+    background-image: none;
+    color: #ffffff;
+    border: 1px solid #03a9f4;
+}
+/*BUTTON END*/
 a {
     text-decoration: none;
 }
+
