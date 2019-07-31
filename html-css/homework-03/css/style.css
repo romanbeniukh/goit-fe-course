@@ -54,6 +54,7 @@ img {
 .main-menu a {
     text-decoration: none;
     color: #626262;
+    transition: .4s;
 }
 .main-menu a:hover,
 .main-menu a:focus {
@@ -129,7 +130,8 @@ a.btn {
     border: 1px solid #626262;
     transition: .4s;
 }
-.btn:hover{
+.btn:hover,
+.btn:focus {
     background-color: #03a9f4;
     background-image: none;
     color: #ffffff;
