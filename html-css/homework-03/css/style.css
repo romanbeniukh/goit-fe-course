@@ -61,28 +61,30 @@ img {
     color: #03a9f4;
 }
 /*NAVIGATION END*/
-.small-container-item {
+
+/*SMALL CONTAINER*/
+.small-container {
     font-size: 0;
     margin: 0;
     padding: 0;
 }
-.small-container-item h2 {
+.small-container h2 {
     font-size: 30px;
     font-weight: 400;
+    padding-bottom: 40px;
 }
 h2 {
-    margin: 0;
-    padding-bottom: 40px;
+    margin: 0;   
 }
 p {
     margin: 0;
 }
-.small-container-item p {
+.small-container p {
     font-size: 14px;
     margin-top: 0;
     padding: 0;
 }
-.small-container-item div {
+.small-container-item {
     width: 420px;
     max-height: 490px;
     overflow-y: hidden;
@@ -92,12 +94,15 @@ p {
     margin-right: 60px;
     margin-bottom: 140px;
 }
-.small-container-item div:nth-child(5),
-.small-container-item div:last-child {
+.small-container-item:nth-child(5),
+.small-container-item:last-child {
     margin-bottom: 0px;
 }
-.small-container-item div:nth-child(2n) {
+.small-container-item:nth-child(2n) {
     margin-right: 0px;
+}
+.small-container-description {
+    
 }
 .font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
@@ -105,6 +110,7 @@ p {
     color: #b4ad9e;
     line-height: 70px;
 }
+/*SMALL CONTAINER END*/
 
 /*BUTTON*/
 .btn-block {
