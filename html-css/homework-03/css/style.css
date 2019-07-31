@@ -67,8 +67,14 @@ img {
 .small-container-item h2 {
     font-size: 30px;
 }
-.small-container-item p {
+h2 {
+    margin: 0;
+    padding-bottom: 40px;
+}
+.small-container-item span {
     font-size: 14px;
+    margin-top: 0;
+    padding: 0;
 }
 .small-container-item div {
     width: 420px;
@@ -89,4 +95,30 @@ img {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
+    line-height: 70px;
+}
+.btn-block {
+    display: inline-block;
+    width: 900px;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.btn-default,
+a.btn {
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 40px;
+}
+.btn {
+    display: inline-block;
+    color: #626262;
+    background-color: transparent;
+    text-align: center;
+    border: 1px solid #626262;
+}
+a {
+    text-decoration: none;
 }
