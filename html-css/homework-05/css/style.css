@@ -1,0 +1,265 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #000000;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+/*LOGO*/
+.logo {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.logo span {
+    font-family: 'Roboto', sans-serif;
+    color: #555252;
+    font-size: 30px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.logo span:nth-child(1) {
+    font-weight: 700;
+    color: #1abc9c;
+}
+/*LOGO END*/
+
+/*NAVIGATION*/
+.page-nav {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    margin: 0;
+}
+
+.main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+    width: 495px;
+}
+
+.main-menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li {
+    float: left;
+    text-transform: uppercase;
+}
+
+.main-menu li:not(:last-child){
+    margin-right: 35px;
+}
+
+.main-menu a {
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    transition: .4s;
+}
+.main-menu a:hover,
+.main-menu a:focus {
+    color: #1abc9c;
+}
+/*NAVIGATION END*/
+
+/**/
+.head-block {
+    text-align: center;
+}
+.head-name {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    font-family: 'Roboto', sans-serif;
+    color: #515151;
+    font-size: 48px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+}
+.head-name::after {
+    padding-top: 32px;
+    margin: auto;
+    width: 160px;
+    display: block;
+    content: '';
+    border-bottom: 7px solid #1abc9c;
+}
+/**/
+/*FULL-WIDTH-CONTENT*/
+
+.full-width-content {
+    width: 100%;
+    height: auto;
+    background-color: #e9f0fd;
+}
+/*FULL-WIDTH-CONTENT END*/
+
+/*NEW COLLECTION*/
+.new-collection {
+    padding-bottom: 70px;
+}
+
+.new-collection-container {
+    height: 322px;
+    width: 255px;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+}
+.new-collection-container:nth-child(4n) {
+    margin: 0px;
+}
+.item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.item-name {
+    margin: 0;
+    background-color: #323232;
+    padding-left: 14px;
+    float: left;
+    width: 195px;
+}
+.item-price {
+    float: left;
+    padding: 0px 14px;
+    background-color: #8c8c8c;
+    display: block;
+    content: '$26';
+    text-align: right;
+    width: 60px;
+}
+/*
+.item-name::after {
+    float: right;
+    padding-right: 14px;
+    padding-left: 14px;
+    background-color: #8c8c8c;
+    display: block;
+    content: '$26';
+    text-align: right;
+}
+*/
+.new-collection-container:hover .item-name{
+    background-color: #1abc9c;
+}
+.new-collection-container:hover .item-price{
+    background-color: #7fd9c7;
+}
+.new-collection-container:hover .hidden-icon-container {
+    visibility: visible;
+}
+/*NEW COLLECTION END*/
+
+/*HIDDEN ICON*/
+.hidden-icon-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 260px;
+    width: 235px;
+    position: absolute;
+    margin: 10px;
+    visibility: hidden;
+}
+.hidden-icon {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+.icon {
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #fff;
+    fill: #fff;
+    float: left;
+    margin-right: 10px;
+}
+.icon:nth-child(3) {
+    margin-right: 0;
+}
+.icon:hover {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
+.icon-long {
+    float: left;
+    background-color: #323232;
+    width: 170px;
+    height: 50px;
+    border: 1px solid #fff;
+    margin-top: 12px;
+    fill: #fff;
+    text-align: center;
+}
+.icon-long:hover {
+    background-color: #1abc9c;
+    border: 1px solid #1abc9c;
+}
+.icon-img {
+    display: block;
+    margin: 12.5px auto;
+}
+.icon-long--img {
+    margin-top: 12px;
+}
+.icon-long--text {
+    float: right;
+    margin-top: 12px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+/*HIDDEN ICON END*/
+
+/*FOOTER*/
+.page-footer {
+    height: 90px;
+    background-color: #323232;
+}
+.footer-content {
+    display: block;
+    margin: 0;
+}
