@@ -30,6 +30,7 @@ img {
 }
 
 .main-menu {
+    font-size: 0;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -43,6 +44,7 @@ img {
 }
 
 .main-menu li {
+    font-size: 14px;
     display: inline-block;
     text-transform: uppercase;
 }
@@ -90,12 +92,12 @@ p {
     margin-right: 60px;
     margin-bottom: 140px;
 }
-.small-container-item:nth-child(5),
-.small-container-item:last-child {
-    margin-bottom: 0px;
-}
 .small-container-item:nth-child(2n) {
     margin-right: 0px;
+}
+.small-container-item:nth-child(5),
+.small-container-item:nth-child(6) {
+    margin-bottom: 0px;
 }
 .small-container-description {
 
@@ -142,5 +144,6 @@ a.btn {
 /*BUTTON END*/
 a {
     text-decoration: none;
+    display: block;
 }
 
