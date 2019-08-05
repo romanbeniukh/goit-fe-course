@@ -55,7 +55,6 @@ a {
     font-family: 'Roboto', sans-serif;
     color: #555252;
     font-size: 30px;
-    line-height: 32px;
     text-transform: uppercase;
     font-weight: 300;
 }
@@ -66,7 +65,7 @@ a {
 /*LOGO END*/
 /*NAVIGATION*/
 .page-nav {
-    margin-top: 4px;
+    margin-top: 3px;
     width: 491px;
     float: right;
 }
@@ -167,7 +166,7 @@ a {
 /*FEATURED PRODUCTS END*/
 
 /*LATEST NEWS*/
-.latest-news {
+.latest-news-section {
     padding-bottom: 80px;
 }
 .news-container {
@@ -179,9 +178,11 @@ a {
 .news-container:nth-child(3n) {
     margin: 0px;
 }
+.news-container img {
+    margin-bottom: 15px;
+}
 .head-news {
     display: inline-block;
-    padding-top: 15px;
     margin: 0;
     color: #515151;
     font-size: 18px;
@@ -189,6 +190,7 @@ a {
     text-transform: capitalize;
     font-weight: 900;
     text-align: left;
+    margin-bottom: 20px;
 }
 .head-news::after {
     padding-top: 16px;
@@ -198,7 +200,7 @@ a {
     border-bottom: 3px solid #1abc9c;
 }
 .news-description {
-    padding-top: 15px;
+    margin-bottom: 20px;
 }
 .btn-default,
 a.btn {
