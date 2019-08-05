@@ -18,7 +18,12 @@ img {
     max-width: 100%;
     height: auto;
 }
+h2,
+p {
+    margin: 0;
+}
 a {
+    display: block;
     text-decoration: none;
 }
 .clearfix::after {
@@ -31,12 +36,19 @@ a {
     width: 1110px;
     margin: 0 auto;
 }
-
+/*HEADER*/
+.page-header {
+    width: 100%;
+    height: 110px;
+    box-shadow: 0 4px 7px rgba(0,0,0,.15);
+}
+.wrap-header {
+    padding-top: 38px;
+}
 /*LOGO*/
 .logo {
-    margin: 0;
-    padding: 0;
     display: inline-block;
+    float: left;
 }
 .logo span {
     font-family: 'Roboto', sans-serif;
@@ -51,36 +63,27 @@ a {
     color: #1abc9c;
 }
 /*LOGO END*/
-
 /*NAVIGATION*/
 .page-nav {
-    padding-top: 38px;
-    padding-bottom: 38px;
     margin: 0;
 }
-
 .main-menu {
     margin: 0;
     padding: 0;
     list-style: none;
     float: right;
-    width: 495px;
 }
-
 .main-menu ul {
     margin: 0;
     padding: 0;
 }
-
 .main-menu li {
     float: left;
     text-transform: uppercase;
 }
-
 .main-menu li:not(:last-child){
     margin-right: 35px;
 }
-
 .main-menu a {
     font-weight: 700;
     font-size: 14px;
@@ -92,21 +95,15 @@ a {
     color: #1abc9c;
 }
 /*NAVIGATION END*/
-
+/*HEADER END*/
 /**/
 .head-block {
-    text-align: center;
+    margin: 70px auto;
 }
 .head-name {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    padding-top: 70px;
-    padding-bottom: 70px;
     font-family: 'Roboto', sans-serif;
     color: #515151;
     font-size: 48px;
-    line-height: 32px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;
@@ -124,7 +121,7 @@ a {
 /*FEATURED PRODUCTS*/
 .small-container {
     height: 322px;
-    width: 255px;
+    min-width: 255px;
     background-color: #e9f0fd;
     margin-right: 30px;
     margin-bottom: 30px;
@@ -148,7 +145,7 @@ a {
     background-color: #323232;
     padding-left: 14px;
     float: left;
-    width: 195px;
+    min-width: 195px;
 }
 .item-price {
     float: left;
@@ -157,19 +154,8 @@ a {
     display: block;
     content: '$26';
     text-align: right;
-    width: 60px;
+    min-width: 60px;
 }
-/*
-.item-name::after {
-    float: right;
-    padding-right: 14px;
-    padding-left: 14px;
-    background-color: #8c8c8c;
-    display: block;
-    content: '$26';
-    text-align: right;
-}
-*/
 .small-container:hover .item-name{
     background-color: #1abc9c;
 }
