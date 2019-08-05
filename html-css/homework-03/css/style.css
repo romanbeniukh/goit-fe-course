@@ -18,7 +18,14 @@ img {
     max-width: 100%;
     height: auto;
 }
-
+h2,
+p {
+    margin: 0;   
+}
+a {
+    text-decoration: none;
+    display: block;
+}
 .container {
     width: 900px;
     margin: 0 auto;
@@ -28,7 +35,6 @@ img {
     padding-top: 77px;
     padding-bottom: 105px;
 }
-
 .main-menu {
     font-size: 0;
     margin: 0;
@@ -37,22 +43,18 @@ img {
     display: block;
     text-align: center;
 }
-
 .main-menu ul {
     margin: 0;
     padding: 0;
 }
-
 .main-menu li {
     font-size: 14px;
     display: inline-block;
     text-transform: uppercase;
 }
-
 .main-menu li:not(:last-child){
     margin-right: 100px;
 }
-
 .main-menu a {
     text-decoration: none;
     color: #626262;
@@ -67,26 +69,19 @@ img {
 /*SMALL CONTAINER*/
 .small-container {
     font-size: 0;
-    margin: 0;
-    padding: 0;
+    padding-bottom: 70px;
 }
 .small-container h2 {
     font-size: 30px;
     font-weight: 400;
     padding-bottom: 40px;
 }
-h2,
-p {
-    margin: 0;   
-}
 .small-container p {
     font-size: 14px;
-    margin-top: 0;
-    padding: 0;
 }
 .small-container-item {
     width: 420px;
-    max-height: 485px;
+    max-height: 500px;
     overflow-y: hidden;
     display: inline-block;
     margin-right: 60px;
@@ -99,40 +94,30 @@ p {
 .small-container-item:nth-child(6) {
     margin-bottom: 0px;
 }
-.small-container-description {
-
-}
 .font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     color: #b4ad9e;
-    line-height: 70px;
+    margin: 30px 0px;
 }
 /*SMALL CONTAINER END*/
 
 /*BUTTON*/
-.btn-block {
-    display: inline-block;
-    width: 900px;
-    margin: 0;
-    padding: 0;
-    margin-top: 60px;
-    margin-bottom: 70px;
-    text-align: center;
-}
-.btn-default,
-a.btn {
+
+.btn-default {
     font-size: 20px;
     line-height: 46px;
     padding: 0 40px;
+    cursor: pointer;
 }
 .btn {
-    display: inline-block;
+    margin-top: 60px;
+    display: block;
     color: #626262;
     background-color: transparent;
-    text-align: center;
     border: 1px solid #626262;
     transition: .4s;
+    margin: 60px auto;
 }
 .btn:hover,
 .btn:focus {
@@ -142,8 +127,4 @@ a.btn {
     border: 1px solid #03a9f4;
 }
 /*BUTTON END*/
-a {
-    text-decoration: none;
-    display: block;
-}
 
