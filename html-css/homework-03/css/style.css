@@ -92,7 +92,7 @@ a {
 }
 .small-container-item:nth-child(5),
 .small-container-item:nth-child(6) {
-    margin-bottom: 0px;
+    margin-bottom: 60px;
 }
 .font-ubuntu {
     font-family: 'Ubuntu', sans-serif;
@@ -117,7 +117,7 @@ a {
     background-color: transparent;
     border: 1px solid #626262;
     transition: .4s;
-    margin: 60px auto;
+    margin: 0 auto;
 }
 .btn:hover,
 .btn:focus {
