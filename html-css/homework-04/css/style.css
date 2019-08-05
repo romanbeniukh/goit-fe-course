@@ -40,7 +40,7 @@ a {
 /*HEADER*/
 .page-header {
     width: 100%;
-    height: 110px;
+    height: 100px;
     box-shadow: 0 4px 7px rgba(0,0,0,.15);
 }
 .wrap-header {
@@ -65,7 +65,7 @@ a {
 /*LOGO END*/
 /*NAVIGATION*/
 .page-nav {
-    margin-top: 3px;
+    margin-top: 2px;
     width: 491px;
     float: right;
 }
