@@ -81,8 +81,6 @@ a {
 }
 .small-container-item {
     width: 420px;
-    max-height: 500px;
-    overflow-y: hidden;
     display: inline-block;
     margin-right: 60px;
     margin-bottom: 140px;
@@ -111,7 +109,6 @@ a {
     cursor: pointer;
 }
 .btn {
-    margin-top: 60px;
     display: block;
     color: #626262;
     background-color: transparent;
