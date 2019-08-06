@@ -99,7 +99,7 @@ a {
 /*HEADER END*/
 /**/
 .head-block {
-    margin: 70px auto;
+    margin-bottom: 70px;
 }
 .head-name {
     font-family: 'Roboto', sans-serif;
@@ -120,6 +120,14 @@ a {
 /**/
 
 /*FEATURED PRODUCTS*/
+.featured-products-section {
+        padding: 80px 0px 40px;
+}
+.featured-products {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 .small-container {
     height: 322px;
     min-width: 255px;
@@ -131,6 +139,11 @@ a {
 }
 .small-container:nth-child(4n) {
     margin: 0px;
+}
+.small-container:nth-child(5),
+.small-container:nth-child(6),
+.small-container:nth-child(7) {
+   margin-bottom: 0;
 }
 .item {
     font-family: 'Roboto', sans-serif;
@@ -167,7 +180,13 @@ a {
 
 /*LATEST NEWS*/
 .latest-news-section {
-    padding-bottom: 80px;
+    padding: 40px 0px 80px;
+}
+.latest-news {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 .news-container {
     width: 350px;
