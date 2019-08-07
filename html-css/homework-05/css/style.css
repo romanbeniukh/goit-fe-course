@@ -19,6 +19,7 @@ img {
     height: auto;
 }
 a {
+    display: block;
     text-decoration: none;
 }
 .clearfix::after {
@@ -28,23 +29,29 @@ a {
 }
 
 .container {
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     margin: 0 auto;
 }
-
 /*HEADER*/
 .page-header {
+    position: fixed;
+    background-color: #fff;
+    z-index: 1;
     width: 100%;
     height: 100px;
     box-shadow: 0 4px 7px rgba(0,0,0,.15);
 }
 .wrap-header {
-    padding-top: 38px;
+    height: 100%;
+    position: relative;
 }
 /*LOGO*/
 .logo {
-    display: inline-block;
-    float: left;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
 }
 .logo span {
     font-family: 'Roboto', sans-serif;
@@ -60,9 +67,10 @@ a {
 /*LOGO END*/
 /*NAVIGATION*/
 .page-nav {
-    margin-top: 2px;
-    width: 491px;
-    float: right;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
 .main-menu {
     margin: 0;
@@ -93,6 +101,38 @@ a {
 /*NAVIGATION END*/
 /*HEADER END*/
 /*PAGE SLIDER*/
+@media (max-width: 1000px) {
+    div.logo {
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+    }
+    nav.page-nav {
+        display: none;
+    }
+    section.page_slider {
+        height: 300px;
+    }
+    button.slider_button {
+        width: 50px;
+        height: 50px;
+    }
+    button.slider_button__left,
+    button.slider_button__right {
+        background-size: 20px;
+    }
+    h1.page_slider__text-box__slider-title {
+        font-size: 30px;
+    }
+    p.page_slider__text-box__slider-text {
+        font-size: 12px;
+    }
+    div.page_slider__text-container {
+        max-width: 361px;
+        top: 58%;
+        transform: translateY(-50%);
+    }
+}
 .page_slider {
     position: relative;
     width: 100%;
@@ -106,21 +146,22 @@ a {
     content: '';
     position: absolute;
     width: 100%;
-    height: 600px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.5);
 }
 .page_slider__container {
     position: relative;
-    width: 1110px;
+    max-width: 1110px;
+    width: 100%;
     height: 100%;
     margin: auto;
+    padding: 0px 10px;
 }
 .slider_button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     border: none;
-    display: inline-block;
     width: 104px;
     height: 104px;
     background-color: #1abc9c;
@@ -148,7 +189,8 @@ a {
 .page_slider__text-container {
     font-family: 'Roboto', sans-serif;
     position: relative;
-    width: 744px;
+    max-width: 744px;
+    width: 100%;
     height: 100%;
     margin: auto;
 }
@@ -205,6 +247,7 @@ a {
     width: 100%;
     height: auto;
     background-color: #e9f0fd;
+    padding-top: 100px;
 }
 /*FULL-WIDTH-CONTENT END*/
 
