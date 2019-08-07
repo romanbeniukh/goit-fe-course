@@ -133,6 +133,11 @@ a {
         transform: translateY(-50%);
     }
 }
+@media (max-width: 450px) {
+    button.slider_button {
+        display: none;
+    }
+}
 .page_slider {
     position: relative;
     width: 100%;
