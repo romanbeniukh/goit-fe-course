@@ -101,57 +101,7 @@ a {
 /*NAVIGATION END*/
 /*HEADER END*/
 /*PAGE SLIDER*/
-@media only screen and (max-width: 1100px) {
-    div.logo {
-        left: 50%;
-        top: 40%;
-        transform: translateX(-50%);
-    }
-    nav.page-nav {
-        display: none;
-    }
-    section.page_slider {
-        height: 450px;
-    }
-    button.slider_button {
-        width: 50px;
-        height: 50px;
-    }
-    button.slider_button__left {
-        background-size: 20px;
-        left: 40px;
-    }
-    button.slider_button__right {
-        background-size: 20px;
-        right: 40px;
-    }
-    h1.page_slider__text-box__slider-title {
-        font-size: 30px;
-    }
-    p.page_slider__text-box__slider-text {
-        font-size: 12px;
-    }
-    div.page_slider__text-container {
-        max-width: 361px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-}
-@media only screen and (max-width: 600px) {
-    section.page_slider {
-        height: 300px;
-    }
-    button.slider_button {
-        display: none;
-    }
-    h2.head-name {
-        font-size: 24px;
-    }
-    h2.head-name::after {
-        padding-top: 32px;
-        width: 80px;
-    }
-}
+
 .page_slider {
     position: relative;
     width: 100%;
@@ -239,7 +189,7 @@ a {
 /*PAGE SLIDER END*/
 /*TITTLE BLOCK*/
 .head-block {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 .head-name {
     font-family: 'Roboto', sans-serif;
@@ -276,13 +226,19 @@ a {
 .new-collection {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
 }
-.new-collection-container {
+.new-collection__card {
     height: 322px;
     width: 255px;
-    margin: 10px;
+    margin: 30px 30px 0px 0px;
     cursor: pointer;
+}
+.new-collection__card:first-child {
+    margin-left: 0;
+}
+.new-collection__card:nth-child(4n) {
+    margin-right: 0;
 }
 .item {
     font-family: 'Roboto', sans-serif;
@@ -308,13 +264,13 @@ a {
     text-align: right;
     width: 60px;
 }
-.new-collection-container:hover .item-name{
+.new-collection__card:hover .item-name{
     background-color: #1abc9c;
 }
-.new-collection-container:hover .item-price{
+.new-collection__card:hover .item-price{
     background-color: #7fd9c7;
 }
-.new-collection-container:hover .hidden-icon-container {
+.new-collection__card:hover .hidden-icon-container {
     visibility: visible;
 }
 /*NEW COLLECTION END*/
@@ -399,4 +355,101 @@ a {
 }
 .footer-list-item a{
     color: #1abc9c;
+}
+/*ADAPT*/
+@media only screen and (max-width: 1130px) {
+    .container {
+        max-width: 842px;
+    }
+    div.logo {
+        left: 50%;
+        top: 40%;
+        transform: translateX(-50%);
+    }
+    nav.page-nav {
+        display: none;
+    }
+    section.page_slider {
+        height: 450px;
+    }
+    button.slider_button {
+        width: 50px;
+        height: 50px;
+    }
+    button.slider_button__left {
+        background-size: 20px;
+        left: 40px;
+    }
+    button.slider_button__right {
+        background-size: 20px;
+        right: 40px;
+    }
+    h1.page_slider__text-box__slider-title {
+        font-size: 42px;
+    }
+    p.page_slider__text-box__slider-text {
+        font-size: 18px;
+    }
+    div.page_slider__text-container {
+        max-width: 514px;
+    }
+    .new-collection__card:nth-child(4n) {
+        margin-right: 30px;
+    }
+    .new-collection__card:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+@media only screen and (max-width: 842px) {
+    .container {
+        max-width: 557px;
+    }
+    .new-collection__card:nth-child(4n) {
+        margin-right: 30px;
+    }
+    .new-collection__card:nth-child(3n) {
+        margin-right: 30px;
+    }
+    .new-collection__card:nth-child(2n) {
+        margin-right: 0px;
+    }
+    h2.head-name {
+        font-size: 42px;
+    }
+    div.page_slider__text-container {
+        max-width: 361px;
+    }
+    h1.page_slider__text-box__slider-title {
+        font-size: 30px;
+    }
+    p.page_slider__text-box__slider-text {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    section.page_slider {
+        height: 300px;
+    }
+    button.slider_button {
+        display: none;
+    }
+    h2.head-name {
+        font-size: 36px;
+    }
+    h2.head-name::after {
+        padding-top: 32px;
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .container {
+        max-width: 255px;
+    }
+    .new-collection {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .new-collection__card {
+        margin: 30px 0px 0px 0px;
+    }
 }
