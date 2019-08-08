@@ -107,6 +107,7 @@ a {
     display: none;
     width: 100%; 
     height: 600px;
+    transition: .4s
 }
 .slide1 {
     background: url(../img/slider/slide1.jpg); 
