@@ -347,7 +347,7 @@ a {
 }
 .footer-content {
     text-align: center;
-    padding-top: 32.5px;
+    padding-top: 35.5px;
 }
 .footer-list {
     color: #fff;
@@ -466,5 +466,11 @@ a {
     }
     .new-collection__card {
         margin: 30px 0px 0px 0px;
+    }
+    .footer-list {
+        font-size: 12px;
+    }
+    .footer-content {
+        padding-top: 32.5px;
     }
 }
