@@ -6,3 +6,5 @@
 <p>https://romanbeniukh.github.io/goit-fe-course/html-css/homework-03/</p>
 <h4>Homework for 04 module:</h4>
 <p>https://romanbeniukh.github.io/goit-fe-course/html-css/homework-04/</p>
+<h4>Homework for 05 module:</h4>
+<p>https://romanbeniukh.github.io/goit-fe-course/html-css/homework-05/</p>
