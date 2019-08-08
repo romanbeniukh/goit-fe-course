@@ -102,7 +102,36 @@ a {
 /*NAVIGATION END*/
 /*HEADER END*/
 /*PAGE SLIDER*/
-
+.mySlides {
+    position: absolute;
+    display: none;
+    width: 100%; 
+    height: 600px;
+}
+.slide1 {
+    background: url(../img/slider/slide1.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide2 {
+    background: url(../img/slider/slide2.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide3 {
+    background: url(../img/slider/slide3.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.slide4 {
+    background: url(../img/slider/slide4.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
 .page_slider {
     position: relative;
     width: 100%;
@@ -119,6 +148,8 @@ a {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    top: 0%;
+    z-index: 1;
 }
 .page_slider__container {
     position: relative;
@@ -127,6 +158,7 @@ a {
     height: 100%;
     margin: auto;
     padding: 0px 10px;
+    z-index: 2;
 }
 .slider_button {
     position: absolute;
@@ -372,6 +404,9 @@ a {
     nav.page-nav {
         display: none;
     }
+    .mySlides {
+        height: 450px;
+    }
     section.page_slider {
         height: 450px;
     }
@@ -443,6 +478,9 @@ a {
 }
 @media only screen and (max-width: 600px) {
     section.page_slider {
+        height: 300px;
+    }
+    .mySlides {
         height: 300px;
     }
     button.slider_button {
