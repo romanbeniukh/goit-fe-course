@@ -1,0 +1,162 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+}
+
+.full_width {
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+}
+
+.page_container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+.page_header {
+    background-color: #fff;
+    width: 100%;
+}
+
+.page_header__nav {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.page_header__nav .page_header__logo {
+    display: flex;
+    align-items: center;
+}
+
+/*NAVIGATION*/
+.page_header__menu {
+    margin: 0;
+    padding-top: 30px;
+    list-style: none;
+    display: flex;
+}
+
+.page_header__menu li {
+    text-transform: uppercase;
+}
+
+.page_header__menu li:not(:last-child){
+    margin-right: 60px;
+}
+
+.page_header__menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: #95e1d3;
+    transition: .4s;
+}
+
+.page_header__menu a:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #f38181;
+    padding-top: 10px;
+    transition: .4s;
+}
+
+.page_header__menu a:hover,
+.page_header__menu a:focus {
+    color: #f38181;
+}
+/*NAVIGATION END*/
+/*HEADER END*/
+
+/*TITTLE BLOCK*/
+.title_block {
+    margin-bottom: 65px;
+}
+
+.title_block__prename {
+    font-family: 'Kaushan Script', cursive;
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 24px; 
+}
+
+.title_block__name {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+
+.title_block__name::after {
+    padding-top: 40px;
+    margin: auto;
+    width: 60px;
+    display: block;
+    content: '';
+    border-bottom: 3px solid #f38181;
+}
+/*TITTLE BLOCK END*/
+
+.services_block {
+    width: 100%;
+}
+
+.services_block__grid {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services_block__element {
+    width: 28%;
+    min-width: 350px;
+    margin-bottom: 100px;
+}
+
+.services_block__element h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.services_block__element::before {
+    content: '';
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-image: url(../img/icons/ALARM.svg);
+    float: left;
+    margin: 5px 30px 30px 0px;
+}
