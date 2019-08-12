@@ -471,6 +471,10 @@ a {
 }
 
 @media only screen and (max-width: 735px) {
+    .title_block__aftername {
+        margin: 40px 25px 0px;
+    }
+
     .services_block__element:nth-child(4),
     .services_block__element:nth-child(5) {
     margin-bottom: 80px;
