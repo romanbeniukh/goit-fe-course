@@ -12,15 +12,39 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <title>ben-homework-06</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script>
+        (function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu')
+        .toggleClass('menu_state_open');
+    });
+    
+    $('.menu__links-item').on('click', function() {
+      // do something
+
+      $(this).closest('.menu')
+        .removeClass('menu_state_open');
+    });
+  });
+})(jQuery);
+    </script> 
 </head>
 <body>
     <header class="page_header">
         <div class="page_container">
-            <nav class="page_header__nav">
+            <nav class="page_header__nav menu">
                 <a href="#" class="page_header__logo">
                     <img src="img/icons/logo.png" alt="">
                 </a>
-                <ul class="page_header__menu">
+                <div class="menu__icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="page_header__menu menu__links">
                     <li><a href="#">about</a></li>
                     <li><a href="#">service</a></li>
                     <li><a href="#">work</a></li>
