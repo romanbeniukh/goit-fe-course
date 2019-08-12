@@ -441,12 +441,29 @@ a {
         display: none;
         top: 0;
         right: 0;
-        left: ;
-        margin-top: 85px;
-        background-color: rgba(0, 0, 0, 0.5);
+        left: 0;
+        margin-top: 80px;
+        padding-bottom: 30px;
+        background-color: rgba(0, 0, 0, 0.9);
         z-index: 1000;
         overflow: auto;
+        text-align: center;
       }
+    
+    .page_header__menu li {
+        text-transform: uppercase;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .page_header__menu li:not(:last-child){
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .menu__links a:hover::after {
+        display: none;
+    }
+    
 }
 
 @media only screen and (max-width: 735px) {
