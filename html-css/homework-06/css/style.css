@@ -396,7 +396,13 @@ a {
     background-color: #95e1d3;
     padding: 0;
     line-height: 2.6;
+    transition: all 200ms linear;
 }
+
+.page_footer__right-container button[name="submit"]:hover {
+    background-color: #f38181;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color: #999;
     font-style: italic;
