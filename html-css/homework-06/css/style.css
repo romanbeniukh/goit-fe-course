@@ -33,9 +33,7 @@ a {
 .page_container {
     width: 100%;
     max-width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
-    box-sizing: border-box;
 }
 
 /*HEADER*/
@@ -125,13 +123,22 @@ a {
     content: '';
     border-bottom: 3px solid #f38181;
 }
+
+.title_block__aftername {
+    text-align: center;
+    margin: 40px 130px 0px;
+}
 /*TITTLE BLOCK END*/
+/*SERVICES BLOCK*/
+.services_section {
+    padding-bottom: 100px; 
+}
 
 .services_block {
     width: 100%;
 }
 
-.services_block__grid {
+.services_block__container {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -142,6 +149,12 @@ a {
     width: 28%;
     min-width: 350px;
     margin-bottom: 100px;
+}
+
+.services_block__element:nth-child(4),
+.services_block__element:nth-child(5),
+.services_block__element:nth-child(6) {
+    margin-bottom: 0;
 }
 
 .services_block__element h4 {
@@ -156,7 +169,133 @@ a {
     display: block;
     height: 32px;
     width: 32px;
-    background-image: url(../img/icons/ALARM.svg);
     float: left;
     margin: 5px 30px 30px 0px;
+}
+
+.services_block__element.photography::before {
+    background-image: url(../img/icons/ALARM.svg);
+}
+
+.services_block__element.web-design::before {
+    background-image: url(../img/icons/web-design.svg);
+}
+
+.services_block__element.creativity::before {
+    background-image: url(../img/icons/creativity.svg);
+}
+
+.services_block__element.seo::before {
+    background-image: url(../img/icons/seo.svg);
+}
+
+.services_block__element.css-html::before {
+    background-image: url(../img/icons/css-html.svg);
+}
+
+.services_block__element.digital::before {
+    background-image: url(../img/icons/digital.svg);
+}
+/*SERVICES BLOCK END*/
+/*TEAM BLOCK*/
+.team {
+    padding-bottom: 85px;
+}
+
+.team_block__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team_block__card {
+    position: relative;
+    min-width: 380px;
+    width:30%;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.team_block__button_block {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    visibility: hidden;
+}
+
+.team_block__button {
+    width: 56px;
+    height: 56px;
+    margin-right: 1px;
+    background-color: #fce38a;
+}
+
+.facebook_button {
+    background-image: url(../img/social/facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.twitter_button {
+    background-image: url(../img/social/twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pinterest_button {
+    background-image: url(../img/social/pinterest.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.instagram_button {
+    background-image: url(../img/social/instagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team_block__card:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 10px #95e1d3;
+    transition: all 200ms linear;
+}
+
+.team_block__card:hover .team_block__button:hover {
+    background-color: #95e1d3
+}
+
+.team_block__card:hover .team_block__button_block {
+    visibility: visible;
+}
+
+.team_block__card:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -moz-linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(252,227,138, 0.9) 0%, rgb(243,129,129, 0.9) 100%);
+    opacity: 80%;
+    width: 380px;
+    height: 470px;
+}
+
+.team_block__name h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.team_block__workname p {
+    font-style: italic;
+    text-align: center;
 }
