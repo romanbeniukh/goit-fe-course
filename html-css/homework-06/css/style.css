@@ -325,7 +325,6 @@ a {
 
 .page_footer__right-container input[name="e-mail"] {
     width: 230px;
-    color: #999999;
     border: 1px solid #e5e5e5;
     font-style: italic;
     padding: 10px;
@@ -343,4 +342,16 @@ a {
     padding: 0;
     line-height: 2.6;
 }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #e5e5e5;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: #e5e5e5;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: #e5e5e5;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: #e5e5e5;
+  }
 /*PAGE FOOTER END*/
