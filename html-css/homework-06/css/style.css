@@ -377,9 +377,23 @@ a {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 735px) {
     .services_block__element:nth-child(4),
     .services_block__element:nth-child(5) {
-    margin-bottom: 100px;
-}
+    margin-bottom: 80px;
+    }
+
+    .services_block__element::before {
+        content: '';
+        display: block;
+        height: 32px;
+        width: 32px;
+        float: none;
+        margin: 15px auto;
+    }
+
+    .services_block__element {
+        text-align: center;
+        margin-bottom: 80px;
+    }
 }
