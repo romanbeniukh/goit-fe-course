@@ -396,4 +396,12 @@ a {
         text-align: center;
         margin-bottom: 80px;
     }
+
+    .page_footer__content {
+        flex-flow: column-reverse;
+        padding: 20px 0px;
+    }
+    .page_footer__left-container {
+        margin-top: 20px;
+    }
 }
