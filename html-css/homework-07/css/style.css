@@ -101,6 +101,7 @@ a {
 
 .page_header__menu {
     margin: 0;
+    padding: 0;
     list-style: none;
     display: flex;
 }
@@ -116,6 +117,7 @@ a {
 .page_header__menu a {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    font-weight: 700;
     color: var(--main-dark-color);
     transition: .4s;
 }
