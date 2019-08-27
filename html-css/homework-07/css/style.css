@@ -196,10 +196,12 @@ a {
 }
 
 .contact_form {
+    position: relative;
     display: flex;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
+    z-index: 1;
 }
 
 .input_container {
@@ -272,6 +274,7 @@ a {
     position: absolute;
     right: 0;
     bottom: 0;
+    z-index: 0;
 }
 
 @media only screen and (max-width: 768px) {
