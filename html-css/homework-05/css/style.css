@@ -376,14 +376,12 @@ a {
     min-height: 90px;
     justify-content: center;
 }
-.footer-list {
+.footer-content {
     color: #fff;
     font-size: 16px;
 }
-.footer-list-item {
-    display: inline-block;
-}
-.footer-list-item a{
+
+.footer-content a{
     color: #1abc9c;
 }
 /*ADAPT*/
