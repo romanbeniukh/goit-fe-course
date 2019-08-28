@@ -165,12 +165,28 @@ a {
     margin: 0;
 }
 
-.list-item_icon {
-    display: inline-block;
+.services_list-item:before {
+    display: block;
+    content: '';
+    width: 65px;
+    height: 65px;
     margin: 0 auto;
     border: 3px solid var(--main-color);
     border-radius: 50%;
-    padding: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list-item-1:before {
+    background-image: url(../img/Icon-Basket.png);
+}
+
+.list-item-2:before {
+    background-image: url(../img/Icon-Laptop.png);
+}
+
+.list-item-3:before {
+    background-image: url(../img/Icon-Locked.png);
 }
 
 .list-item__title {
@@ -188,9 +204,11 @@ a {
 
 /* CONTACT BLOCK */
 .contact_block {
-    background: var(--main-dark-color);
+    background: var(--main-dark-color); 
+    background-image: url(../img/Map\ Image.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
     padding-bottom: 120px;
-    position: relative;
 }
 
 .white_title {
@@ -203,7 +221,6 @@ a {
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    z-index: 1;
 }
 
 .input_container {
@@ -270,13 +287,13 @@ a {
     line-height: 70px;
     border: none;
     border-radius: 4px;
+    transition: .4s;
+    cursor: pointer;
 }
 
-.map-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
+.btn:hover {
+    background-color: #fff;
+    color: var(--main-dark-color);
 }
 
 @media only screen and (max-width: 768px) {
