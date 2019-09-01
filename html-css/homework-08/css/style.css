@@ -275,7 +275,7 @@ a {
     background-color: var(--main-color);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
     .page_container {
         width: 100%;
         max-width: 768px;
