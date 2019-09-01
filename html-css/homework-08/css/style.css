@@ -179,6 +179,40 @@ a {
     max-width: 230px;
     text-align: center;
     margin-bottom: 30px;
+    transition: .4s;
+    padding: 15px;
+}
+
+.partner_wrap__list-item:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    box-shadow: 0.3em 0.3em 1em var(--main-gray-color);
+    background: var(--main-white-color);
+}
+
+.partner_wrap__list-item:hover .list-item__btn {
+    display: block;
+}
+
+.list-item__btn {
+    margin: 0 auto;
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 180px;
+    height: 30px;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    border-radius: 20px;
+    transition: .4s;
+    margin-top: 15px;
+}
+
+.list-item__btn:hover {
+    color: var(--main-white-color);
+    background-color: var(--main-color);
 }
 
 .list-item__img {
