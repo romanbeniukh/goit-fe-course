@@ -1,4 +1,38 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Roboto:300&display=swap');
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
 
 :root {
     --main-color: #ff4e50;
@@ -41,7 +75,7 @@ a {
 
 
 /* HEADER WRAP*/
-.header_wrap {
+.header {
     position: relative;
     background-image: url(../img/Vector\ Smart\ Object.jpg);
     background-position: center;
@@ -50,7 +84,7 @@ a {
     width: 100%;
 }
 
-.header_wrap::after {
+.header::after {
     content: '';
     background-color: rgba(26, 25, 21, 0.5);
     position: absolute;
@@ -79,6 +113,7 @@ a {
     font-size: 20px;
     color: var(--main-white-color);
     font-weight: 700;
+    transition: .4s;
 }
 
 .login_container {
@@ -94,7 +129,8 @@ a {
     transition: .4s;
 }
 
-.btn_login:hover {
+.btn_login:hover,
+.header_logo:hover {
     color: var(--main-color);
 }
 
@@ -113,6 +149,10 @@ a {
 .btn_signup:hover {
     color: var(--main-color);
     border: 2px solid var(--main-color);
+}
+
+.header_wrap {
+    text-align: center;
 }
 
 .header_wrap__title {
@@ -151,11 +191,10 @@ a {
 
 /* PARTNERS BLOCK */
 .partner_wrap {
+    padding: 60px 0;
     display: flex;
     align-items: center;
-    flex-flow: column wrap;
-    justify-content: center;
-    padding: 60px 0;
+    flex-direction: column;
 }
 
 .partner_wrap__title {
@@ -168,11 +207,13 @@ a {
 }
 
 .partner_wrap__list-item {
-    max-width: 230px;
     text-align: center;
     margin-bottom: 30px;
     transition: .4s;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .list-item__img {
@@ -252,9 +293,40 @@ a {
     margin: 20px 0;
 }
 
-@media only screen and (min-width: 768px) {
-    .container {
-        min-width: 768px;
+.list-item__partner-description {
+    max-width: 230px;
+}
+
+.partner_wrap__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 280px;
+    height: 40px;
+    border: 2px solid var(--main-color);
+    background: transparent;
+    color: var(--main-color);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.partner_wrap__btn:hover {
+    color: var(--main-white-color);
+    background-color: var(--main-color);
+}
+
+@media screen and (min-width:576px){
+    .container{
+        width: 100%;
+        max-width: 546px; 
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:768px){
+    .container{
+        width: 100%;
+        max-width: 738px; 
+        margin: 0 auto;
     }
 
     .header_block {
@@ -281,13 +353,30 @@ a {
         max-width: 600px;
     }
 
+    .header_logo {
+        justify-content: flex-start;
+        display: flex;
+    }
+
     .login_container {
         margin-bottom: 0;
+        justify-content: flex-end;
+        display: flex;
     }
 }
 
-@media only screen and (min-width: 1440px) {
-    .container {
-        min-width: 940px;
+@media screen and (min-width:992px){
+    .container{
+        width: 100%;
+        max-width: 962px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1200px){
+    .container{
+        width: 100%;
+        max-width: 1180px; 
+        margin: 0 auto;
     }
 }
