@@ -342,41 +342,17 @@ a {
     height: 56px;
     margin-right: 1px;
     background-color: #fce38a;
-    position: absolute;
+    position: relative;
 }
 
 .icon { 
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     fill: #f38181;
-  }
-
-/* .button-wrap__btn--facebook {
-    background-image: url(../img/social/facebook.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-} */
-
-.button-wrap__btn--twitter {
-    background-image: url(../img/social/twitter.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.button-wrap__btn--pinterest {
-    background-image: url(../img/social/pinterest.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.button-wrap__btn--instagram {
-    background-image: url(../img/social/instagram.svg);
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .list-item__card:hover {
