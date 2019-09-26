@@ -154,18 +154,16 @@ a {
 .welcome {
     position: relative;
     width: 100%;
-    height: 100vh;
     background-image: url(../img/Layer\ 15.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 .welcome__block {
-    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    padding: 250px 0 200px;
 }
 
 .welcome__block-subtitle {
@@ -184,6 +182,7 @@ a {
     text-transform: uppercase;
     line-height: 100%;
     margin: 40px 0 120px;
+    max-width: 75%;
 }
 
 .welcome__block-btn {
@@ -195,10 +194,12 @@ a {
     background-color: transparent;
     font-size: 14px;
     font-weight: 700;
+    transition: .4s;
 }
 
 .welcome__block-btn:hover {
-    background-color: #;
+    background-color: #fff;
+    color: #fce38a;
 }
 /*TITTLE BLOCK*/
 .title_block {
@@ -237,34 +238,34 @@ a {
 }
 /*TITTLE BLOCK END*/
 /*SERVICES BLOCK*/
-.services_section {
+.services-section {
     padding-bottom: 100px; 
 }
 
-.services_block {
+.services__block {
     width: 100%;
 }
 
-.services_block__container {
+.services-block__container {
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.services_block__element {
+.services-list__item {
     width: 28%;
     min-width: 350px;
     margin-bottom: 100px;
 }
 
-.services_block__element:nth-child(4),
-.services_block__element:nth-child(5),
-.services_block__element:nth-child(6) {
+.services-list__item:nth-child(4),
+.services-list__item:nth-child(5),
+.services-list__item:nth-child(6) {
     margin-bottom: 0;
 }
 
-.services_block__element h4 {
+.services-list__item h4 {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     font-size: 14px;
@@ -272,7 +273,7 @@ a {
     text-transform: uppercase;
 }
 
-.services_block__element::before {
+.services-list__item::before {
     content: '';
     display: block;
     height: 32px;
@@ -281,27 +282,27 @@ a {
     margin: 5px 30px 30px 0px;
 }
 
-.services_block__element.photography::before {
+.services-list__item--photography::before {
     background-image: url(../img/icons/ALARM.svg);
 }
 
-.services_block__element.web-design::before {
+.services-list__item--web-design::before {
     background-image: url(../img/icons/web-design.svg);
 }
 
-.services_block__element.creativity::before {
+.services-list__item--creativity::before {
     background-image: url(../img/icons/creativity.svg);
 }
 
-.services_block__element.seo::before {
+.services-list__item--seo::before {
     background-image: url(../img/icons/seo.svg);
 }
 
-.services_block__element.css-html::before {
+.services-list__item--css-html::before {
     background-image: url(../img/icons/css-html.svg);
 }
 
-.services_block__element.digital::before {
+.services-list__item--digital::before {
     background-image: url(../img/icons/digital.svg);
 }
 /*SERVICES BLOCK END*/
@@ -310,7 +311,7 @@ a {
     padding-bottom: 85px;
 }
 
-.team_block__container {
+.team-block__container {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -318,7 +319,7 @@ a {
     flex-wrap: wrap;
 }
 
-.team_block__card {
+.list-item__card {
     position: relative;
     min-width: 380px;
     width:30%;
@@ -326,7 +327,7 @@ a {
     margin-bottom: 30px;
 }
 
-.team_block__button_block {
+.card__button-wrap {
     display: flex;
     position: absolute;
     top: 50%;
@@ -336,52 +337,58 @@ a {
     visibility: hidden;
 }
 
-.team_block__button {
+.button-wrap__btn {
     width: 56px;
     height: 56px;
     margin-right: 1px;
     background-color: #fce38a;
 }
 
-.facebook_button {
+.icon { 
+    width: 50px; 
+    height: 50px;
+    margin: .5em;
+  }
+
+/* .button-wrap__btn--facebook {
     background-image: url(../img/social/facebook.svg);
     background-repeat: no-repeat;
     background-position: center;
-}
+} */
 
-.twitter_button {
+.button-wrap__btn--twitter {
     background-image: url(../img/social/twitter.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.pinterest_button {
+.button-wrap__btn--pinterest {
     background-image: url(../img/social/pinterest.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.instagram_button {
+.button-wrap__btn--instagram {
     background-image: url(../img/social/instagram.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.team_block__card:hover {
+.list-item__card:hover {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 10px #95e1d3;
     transition: all 200ms linear;
 }
 
-.team_block__card:hover .team_block__button:hover {
+.list-item__card:hover .button-wrap__btn:hover {
     background-color: #95e1d3
 }
 
-.team_block__card:hover .team_block__button_block {
+.list-item__card:hover .card__button-wrap {
     visibility: visible;
 }
 
-.team_block__card:hover::after {
+.list-item__card:hover::after {
     content: '';
     display: block;
     position: absolute;
@@ -394,7 +401,7 @@ a {
     height: 470px;
 }
 
-.team_block__name h4 {
+.list-item__name h4 {
     font-family: 'Montserrat', sans-serif;
     color: #333;
     font-size: 14px;
@@ -402,7 +409,7 @@ a {
     text-align: center;
 }
 
-.team_block__workname p {
+.list-item__workname p {
     font-style: italic;
     text-align: center;
 }
