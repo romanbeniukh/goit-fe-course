@@ -345,7 +345,7 @@ a {
     position: relative;
 }
 
-.icon { 
+.btn__icon { 
     position: absolute;
     width: 30px;
     height: 30px;
@@ -362,7 +362,11 @@ a {
 }
 
 .list-item__card:hover .button-wrap__btn:hover {
-    background-color: #95e1d3
+    background-color: #f38181;;
+}
+
+.button-wrap__btn:hover .btn__icon {
+    fill: #fff;
 }
 
 .list-item__card:hover .card__button-wrap {
