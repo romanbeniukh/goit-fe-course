@@ -191,7 +191,7 @@ a {
 
 /* PARTNERS BLOCK */
 .partner_wrap {
-    padding: 60px 0;
+    padding: 60px 0 0 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -297,7 +297,11 @@ a {
     max-width: 230px;
 }
 
-.partner_wrap__btn {
+.partner_block__btn {
+    padding-bottom: 60px;
+}
+
+.partner-btn__btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     width: 280px;
@@ -309,7 +313,7 @@ a {
     transition: .4s;
 }
 
-.partner_wrap__btn:hover {
+.partner-btn__btn:hover {
     color: var(--main-white-color);
     background-color: var(--main-color);
 }
