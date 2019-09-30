@@ -1,0 +1,52 @@
+.page_footer {
+  background-color: $main-white-color;
+  width: 100%;
+}
+
+.page_footer__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+  min-height: 65px;
+}
+
+.page_footer__left-container a {
+  color: $main-red-color;
+  display: inline;
+}
+
+.page_footer__right-container form {
+  display: inline-flex;
+}
+
+.page_footer__right-container input[name="e-mail"] {
+  width: 230px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  margin: 0;
+
+  &::placeholder {
+    color: $main-gray-color;
+    font-style: italic;
+  }
+}
+
+.page_footer__right-container button[name="submit"] {
+  font-family: $title-font;
+  font-weight: 700;
+  color: $main-white-color;
+  width: 150px;
+  margin: 0;
+  border: none;
+  background-color: $main-green-color;
+  padding: 0;
+  line-height: 2.6;
+  transition: all 200ms linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $main-red-color;
+  }
+}

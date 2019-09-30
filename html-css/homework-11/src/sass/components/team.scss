@@ -1,0 +1,89 @@
+.team {
+  padding-bottom: 85px;
+}
+
+.team-block__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.list-item__card {
+  position: relative;
+  min-width: 380px;
+  width: 30%;
+  cursor: pointer;
+  margin-bottom: 30px;
+
+  &:hover {
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 10px $main-green-color;
+    transition: all 200ms linear;
+  }
+
+  &:hover .button-wrap__btn:hover {
+    background-color: $main-red-color;
+  }
+
+  &:hover .card__button-wrap {
+    visibility: visible;
+  }
+
+  &:hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient( 90deg, rgba(252,227,138, 0.9) 0%, rgba(243,129,129, 0.9) 100%);
+    width: 380px;
+    height: 470px;
+  }
+}
+
+.card__button-wrap {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  visibility: hidden;
+}
+
+.button-wrap__btn {
+  width: 56px;
+  height: 56px;
+  margin-right: 1px;
+  background-color: $main-yellow-color;
+  position: relative;
+
+  &:hover .btn__icon {
+    fill: $main-white-color;
+  }
+}
+
+.btn__icon { 
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $main-red-color;
+}
+
+.list-item__name h4 {
+  font-family: $title-font;
+  color: $main-dark-color;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.list-item__workname p {
+  font-style: italic;
+  text-align: center;
+}

@@ -9,6 +9,7 @@ const gcmq = require('gulp-group-css-media-queries');
 const del = require('del');
 const htmlmin = require('gulp-htmlmin');
 const imagemin = require('gulp-imagemin');
+const imageminJpegtran = require('imagemin-jpegtran');
 const svgstore = require('gulp-svgstore');
 const plumber = require('gulp-plumber');
 const rigger = require('gulp-rigger');

@@ -1,0 +1,59 @@
+@media only screen and (max-width: 1150px) {
+  .team-block__container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .team-block__list-item {
+    margin-top: 100px;
+  }
+
+  .team-block__list-item:first-child {
+    margin-top: 0;
+  } 
+}
+
+@media only screen and (max-width: 735px) {
+  .page-header__nav {
+    justify-content: center;
+  }
+
+  .page-header__menu{
+    display: none;
+  }
+
+  .title_block__aftername {
+    margin: 40px 25px 0px;
+  }
+
+  .services-list__item:nth-child(4),
+  .services-list__item:nth-child(5) {
+    margin-bottom: 80px;
+  }
+
+  .services-list__item::before {
+    content: '';
+    display: block;
+    height: 32px;
+    width: 32px;
+    float: none;
+    margin: 15px auto;
+  }
+
+  .services-list__item {
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .page_footer__content {
+    flex-flow: column-reverse;
+    padding: 20px 0px;
+  }
+  
+  .page_footer__left-container {
+    margin-top: 20px;
+  }
+}

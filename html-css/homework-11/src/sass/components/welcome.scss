@@ -1,0 +1,59 @@
+.welcome {
+  position: relative;
+  width: 100%;
+  background-image: url(../images/background/background.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.welcome__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 250px 0 200px;
+}
+
+.welcome__block-subtitle {
+  font-family: $subtitle-font;
+  font-size: 4vw;
+  color: $main-white-color;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 8vw;
+  }
+}
+
+.welcome__block-title {
+  font-family: $title-font;
+  font-size: 8vw;
+  color: $main-white-color;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 100%;
+  margin: 40px 0 120px;
+  max-width: 75%;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 13vw;
+  }
+}
+
+.welcome__block-btn {
+  width: 160px;
+  height: 40px;
+  border: 3px solid $main-white-color;
+  font-family: 'Montserrat', sans-serif;
+  color: $main-white-color;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  transition: .4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $main-white-color;
+    color: $main-yellow-color; 
+  }
+}

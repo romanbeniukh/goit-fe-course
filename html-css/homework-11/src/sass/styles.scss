@@ -1,4 +1,17 @@
 /*
    Import partials below
 */
-@import './normalize';
+@import 'helpers/list';
+@import 'helpers/var';
+@import 'normalize';
+@import 'base';
+
+/* COMPONENTS */
+@import 'components/container';
+@import 'components/page-header';
+@import 'components/welcome';
+@import 'components/title-block';
+@import 'components/services';
+@import 'components/team';
+@import 'components/footer';
+@import 'components/media';
