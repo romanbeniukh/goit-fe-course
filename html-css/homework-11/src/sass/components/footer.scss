@@ -22,7 +22,7 @@
 }
 
 .page_footer__right-container input[name="e-mail"] {
-  width: 230px;
+  max-width: 230px;
   border: 1px solid #e5e5e5;
   padding: 10px;
   margin: 0;
@@ -37,11 +37,10 @@
   font-family: $title-font;
   font-weight: 700;
   color: $main-white-color;
-  width: 150px;
+  padding: 0 30px;
   margin: 0;
   border: none;
   background-color: $main-green-color;
-  padding: 0;
   line-height: 2.6;
   transition: all 200ms linear;
   cursor: pointer;

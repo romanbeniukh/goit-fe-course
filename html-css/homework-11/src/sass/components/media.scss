@@ -4,11 +4,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 0 auto;
   }
 
   .team-block__list-item {
     margin-top: 100px;
+    width: 100%;
   }
 
   .team-block__list-item:first-child {
@@ -46,6 +48,8 @@
   .services-list__item {
     text-align: center;
     margin-bottom: 80px;
+    min-width: 100%;
+    width: 100%;
   }
 
   .page_footer__content {
