@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial,"Hiragino Kaku Gothic Pro W3",Meiryo,sans-serif;
+    background-color: #fff;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+  }
+  body a,
+  body a:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+  body p {
+    margin: 0;
+  }
+
+  .overlay {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+  
+  .flexbox {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    height: 100vh;
+  }
+  .flexbox:hover .overlay {
+    opacity: 0.8;
+  }
+  .flexbox .item {
+    position: relative;
+    width: 33.33%;
+    height: calc(100vh / 4);
+    border: 1px solid #ff4000;
+    background: #fff;
+  }
+  .flexbox .item--last {
+    height: calc(100vh / 2);
+  }
+  .flexbox .item .overlay {
+    width: 100%;
+    display: block;
+    transition: all .8s;
+  }
+  .flexbox .item .title {
+    position: absolute;
+    top: 48%;
+    left: 0;
+    width: 100%;
+    padding: 0 3%;
+    font-size: 30px;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.42);
+  }
+  .flexbox .item:hover .overlay {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .flexbox {
+      height: auto;
+    }
+    .flexbox .item {
+      width: 100%;
+    }
+    .flexbox .item--last {
+      height: calc(100vh / 4);
+    }
+  }
+  
