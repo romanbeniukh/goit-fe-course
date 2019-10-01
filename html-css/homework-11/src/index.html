@@ -12,19 +12,28 @@
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 <body>
+    <div class="overlay" id="overlay"></div>
     <header class="page_header">
-        <div class="page_container page-header page-header__mobile">
-            <nav class="page-header__nav menu">
-                <a href="#" class="page-header__logo">
-                    <img src="/images/ic/logo.png" alt="">
-                </a>
-                <ul class="page-header__menu list">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">blog</a></li>
-                </ul>
+        <div class="page_container page-header">
+            <button class="hamburger-menu" id="open">
+                <span class="hamburger-menu__icon" id="open_btn">
+            </button>
+            <nav class="page-header__nav menu menu__mobile" id="menu">
+                <button class="hamburger-menu" id="close">
+                    <span class="hamburger-menu__icon" id="close_btn">
+                </button>
+                <div class="menu__wrap">
+                    <a href="#" class="page-header__logo">
+                        <img src="/images/ic/logo.png" alt="">
+                    </a>
+                    <ul class="page-header__menu list">
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">service</a></li>
+                        <li><a href="#">work</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">blog</a></li>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
@@ -205,5 +214,34 @@
         </div>
     </footer>
 
+<script>
+const open = document.getElementById("open"),
+      close = document.getElementById("close"),
+      menu = document.getElementById("menu"),
+      overlay = document.getElementById("overlay"),
+      openbtn = document.getElementById("open_btn"),
+      closebtn = document.getElementById("close_btn");
+
+open.onclick = function() {
+  menu.style.left = "0";
+  overlay.style.display = "block";
+  openbtn.classList.add("animate");
+  closebtn.classList.add("animate");
+}
+
+close.onclick = function() {
+  menu.style.left = "-100%";
+  overlay.style.display = "none";
+  openbtn.classList.remove("animate");
+  closebtn.classList.remove("animate");
+}
+
+overlay.onclick = function() {
+  menu.style.left = "-100%";
+  overlay.style.display = "none";
+  openbtn.classList.remove("animate");
+  closebtn.classList.remove("animate");
+}
+</script>
 </body>
 </html>

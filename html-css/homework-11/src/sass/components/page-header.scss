@@ -11,6 +11,17 @@
   justify-content: space-between;
 }
 
+.hamburger-menu {
+  display: none;
+}
+
+
+.menu__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; 
+}
+
 .page-header__nav .page-header__logo {
   display: flex;
   align-items: center;
