@@ -154,7 +154,7 @@ a {
 .welcome {
     position: relative;
     width: 100%;
-    background-image: url(../img/Layer\ 15.jpg);
+    background-image: url(../img/background.jpg);
     background-position: center;
     background-size: cover;
 }
