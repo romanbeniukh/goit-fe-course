@@ -63,6 +63,29 @@
   .flexbox .item:hover .overlay {
     opacity: 1;
   }
+  .item:hover .title {
+    display: none;
+  }
+  .page {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  div.page a {
+    color: #fff;
+    font-size: 24px;
+    line-height: 150%;
+    transition: .4s;
+  }
+  div.page a:hover {
+    color: #ff4000;
+  }
+  .item:hover .page {
+    display: flex;
+  }
   
   @media (max-width: 768px) {
     .flexbox {
