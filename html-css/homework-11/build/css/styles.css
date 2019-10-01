@@ -456,6 +456,18 @@ p {
   align-items: center;
 }
 
+.page-header__logo {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  transition: .4s;
+}
+
+.page-header__logo:hover {
+  color: #fce38a;
+}
+
 .page-header__menu {
   margin: 0;
   padding-top: 30px;
@@ -479,17 +491,16 @@ p {
   transition: .4s;
 }
 
+.page-header__menu a:hover {
+  color: #fce38a;
+}
+
 .page-header__menu a:hover::after {
   content: '';
   display: block;
   border-bottom: 3px solid #fce38a;
   padding-top: 10px;
   transition: .4s;
-}
-
-.page-header__menu a:hover,
-.page-header__menu a:focus {
-  color: #fce38a;
 }
 
 .welcome {

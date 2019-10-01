@@ -27,6 +27,18 @@
   align-items: center;
 }
 
+.page-header__logo {
+  font-family: $title-font;
+  color: $main-white-color;
+  font-weight: 700;
+  font-size: 30px;
+  transition: .4s;
+
+  &:hover {
+    color: $main-yellow-color;
+  }
+}
+
 .page-header__menu {
   margin: 0;
   padding-top: 30px;
@@ -48,17 +60,16 @@
   font-size: 14px;
   color: $main-white-color;
   transition: .4s;
-}
 
-.page-header__menu a:hover::after {
-  content: '';
-  display: block;
-  border-bottom: 3px solid $main-yellow-color;
-  padding-top: 10px;
-  transition: .4s;
-}
+  &:hover {
+    color: $main-yellow-color;
+  }
 
-.page-header__menu a:hover,
-.page-header__menu a:focus {
-  color: $main-yellow-color;
+  &:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid $main-yellow-color;
+    padding-top: 10px;
+    transition: .4s;
+  }
 }
