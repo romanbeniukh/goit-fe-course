@@ -54,7 +54,7 @@
   margin-right: 60px;
 }
 
-.page-header__menu a {
+.page-header__menu__list-item a {
   font-family: $title-font;
   font-weight: 500;
   font-size: 14px;
@@ -71,5 +71,31 @@
     border-bottom: 3px solid $main-yellow-color;
     padding-top: 10px;
     transition: .4s;
+  }
+}
+
+.page-header__menu__list-item--icon a {
+  font-family: $title-font;
+  font-weight: 500;
+  font-size: 14px;
+  color: $main-white-color;
+  transition: .4s;
+
+  &:hover {
+    color: $main-yellow-color;
+  }
+}
+
+.page-header__menu__list-item--icon {
+  & svg {
+  fill: $main-white-color;
+
+    &:hover {
+      fill: $main-yellow-color;
+    }
+  }
+
+  & span {
+    display: none;
   }
 }

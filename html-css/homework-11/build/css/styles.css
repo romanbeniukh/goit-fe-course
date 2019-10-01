@@ -483,7 +483,7 @@ p {
   margin-right: 60px;
 }
 
-.page-header__menu a {
+.page-header__menu__list-item a {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -491,16 +491,40 @@ p {
   transition: .4s;
 }
 
-.page-header__menu a:hover {
+.page-header__menu__list-item a:hover {
   color: #fce38a;
 }
 
-.page-header__menu a:hover::after {
+.page-header__menu__list-item a:hover::after {
   content: '';
   display: block;
   border-bottom: 3px solid #fce38a;
   padding-top: 10px;
   transition: .4s;
+}
+
+.page-header__menu__list-item--icon a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fff;
+  transition: .4s;
+}
+
+.page-header__menu__list-item--icon a:hover {
+  color: #fce38a;
+}
+
+.page-header__menu__list-item--icon svg {
+  fill: #fff;
+}
+
+.page-header__menu__list-item--icon svg:hover {
+  fill: #fce38a;
+}
+
+.page-header__menu__list-item--icon span {
+  display: none;
 }
 
 .welcome {
@@ -974,6 +998,16 @@ p {
   .page-header__logo {
     padding: 0 0 0 20px;
     margin: 10px;
+  }
+
+  .page-header__menu__list-item--icon span {
+    display: block;
+    margin-left: 10px;
+  }
+
+  .page-header__menu__list-item--icon a {
+    display: flex;
+    flex-direction: row;
   }
 
   .welcome__block-subtitle {
